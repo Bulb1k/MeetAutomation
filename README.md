@@ -24,14 +24,13 @@ docker-compose up --build
 
 ## Структура
 ```
-├── main.py              # Точка входу
-├── entrypoint.sh        # Docker init script
-├── services/
+├── main.py      # Точка входу
+├── start.sh     # Docker start script
+├── config.py   # Конфігурація
+├── /services       
 │   ├── google_meet.py   # Автоматизація Meet
 │   ├── recorder.py      # FFmpeg wrapper
 │   └── storage.py       # Збереження файлів
-└── core/
-    └── config.py        # Конфігурація
 ```
 
 ## Примітки
