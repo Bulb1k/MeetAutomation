@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  meet-recorder:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./${STORAGE_DIR}:/app/${STORAGE_DIR}
+    shm_size: '2gb' 
+    tty: true
