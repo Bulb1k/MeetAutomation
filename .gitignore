@@ -188,4 +188,4 @@ __pycache__
 redis_data/
 *.tmp
 recordings
-
+downloaded_files
